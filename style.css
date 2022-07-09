@@ -1,0 +1,230 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background: hsl(30, 38%, 92%);
+  min-height: 100vh;
+}
+
+ main{
+  width: 34.8097%;
+  height: 56.4vh;
+  margin: 0 auto;
+  position: relative;
+  top: 21.6vh; 
+}
+
+main > section{
+  float: left;
+  width: 50%;
+  height: 100%;
+ 
+}
+
+.left{
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: cover;
+  border-top-left-radius: 2.5%;
+  border-bottom-left-radius: 2.5%;
+} 
+
+.right{
+  background-color: white;
+  color: hsl(212, 21%, 14%);
+  padding: 5.3%;
+border-top-right-radius: 2.5%;
+border-bottom-right-radius: 2.5%;}
+
+.right h2{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.right h1{
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 4vh;
+  position: relative;
+  top: 3vh;
+}
+
+.right p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color:hsl(228, 12%, 48%);
+  position: relative;
+  top: 6vh;
+  line-height: 3vh;
+}
+
+.right span{
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  
+}
+ #actualPrice{
+  color: rgba(38, 106, 64, 0.881);;
+  position: relative;
+  top: 9vh;
+ }
+
+ #previousPrice{
+  font-size: 1.11rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration:line-through;
+  position: relative;
+  top: 8.6vh;
+  left: 9.2%;
+ }
+
+.cart{
+  background: rgba(38, 106, 64, 0.881);
+  position: relative;
+  top: 12vh;
+  padding: 1.7vh 20%;
+  text-align: center;
+  border-radius: 7px;
+  
+
+}
+.cart img{
+  position: relative;
+  top: 0.3vh;
+  right: 1.5vh;
+}
+.cart a{
+  color: white;
+  text-decoration: none;font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.attribution{
+  position: absolute;
+  bottom: 5vh;
+  left: 37%;
+  font-size: 1.8rem;
+  }
+
+@media screen and (max-width: 375px){
+  main{
+    width: 92%;
+    height: 55vh;
+    top: 4vh;
+   }
+   main > section{
+    float: none;
+    width: 100%;
+   }
+
+   .left{
+    background-size: cover;
+    background-image: url(./images/image-product-mobile.jpg);
+    height: 67%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 2.5%;
+      }
+    .right{
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 2.5%;
+    }
+    .right h2{
+      position: relative;
+      top: 0.5vh;
+    }
+    .right h1{
+      font-size: 3rem;
+      top: 2.7vh;
+      line-height: 4.7vh;
+    }
+    .right p{
+      line-height: 3.6vh;
+      top: 5vh;
+    }
+    #actualPrice{
+      top: 11.7vh;
+    }
+    #previousPrice{
+      top: 10.7vh;
+      font-size: 1.12rem;
+    }
+    .cart{
+      top: 14.2vh;
+      padding: 2vh 20%;
+    }
+
+    .attribution{
+      bottom: 1vh;
+      left: 20%;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 600px) {
+  main{
+    width: 92%;
+    height: 55vh;
+    top: 4vh;
+   }
+   main > section{
+    float: none;
+    width: 100%;
+   }
+
+   .left{
+    background-size: cover;
+    background-image: url(./images/image-product-mobile.jpg);
+    height: 67%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 2.5%;
+      }
+    .right{
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 2.5%;
+    }
+    .right h2{
+      position: relative;
+      top: 0.5vh;
+      font-size: 1.5rem;
+    }
+    .right h1{
+      font-size: 3.8rem;
+      top: 2.7vh;
+      line-height: 4.7vh;
+    }
+    .right p{
+      line-height: 3.6vh;
+      top: 5vh;
+      font-size: 1.8rem;
+    }
+    #actualPrice{
+      top: 11.7vh;
+    }
+    #previousPrice{
+      top: 10.7vh;
+      font-size: 1.12rem;
+    }
+    .cart{
+      top: 14.2vh;
+      padding: 2vh 20%;
+    }
+
+    .attribution{
+      bottom: 1vh;
+      left: 15%;
+      font-size: 1.5rem;
+    }
+}
